@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+:root {
+  --background: #09010d;
+  --window-background: #17001d;
+  --pink-accent: #ff0546;
+  --dark-pink: #9c173b;
+  --blue-accent: #0ce6f2;
+}
+
+* {
+  font-family: "Pixelify Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px;
+  background-color: var(--background);
+}
+
+main {
+  width: 50vw;
+  min-height: 30vh;
+  max-height: 70vh;
+  background-color: var(--window-background);
+  box-shadow: 0 0 30px #270022;
+  padding: 70px;
+  margin-bottom: 70px;
+}
+
+#backBtn {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  background: transparent;
+  border: 3px solid var(--dark-pink);
+  padding: 5px 20px;
+  color: wheat;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+#backBtn:hover {
+  background-color: var(--dark-pink);
+  box-shadow: 0 0 10px var(--dark-pink);
+}
+
+.general-info {
+  display: flex;
+  color: var(--blue-accent);
+  align-items: center;
+}
+
+#username {
+  font-size: 35px;
+}
+
+.general-info img {
+  width: 200px;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin-right: 50px;
+  border: 2px solid var(--pink-accent);
+}
+
+.join-date {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#date {
+  margin-left: 10px;
+}
+
+.follows {
+  display: flex;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.follows span {
+  margin-right: 10px;
+  color: wheat;
+}
+
+.followers-div,
+.following-div {
+  display: flex;
+  margin-right: 20px;
+}
+
+fieldset {
+  color: var(--blue-accent);
+  border: 1px solid var(--pink-accent);
+  padding: 20px;
+  margin-top: 30px;
+}
+
+legend {
+  padding: 0 10px;
+  font-size: 30px;
+  color: var(--pink-accent);
+}
+
+#usernameInput {
+  width: 700px;
+  padding: 5px 20px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 2px solid var(--pink-accent);
+  color: var(--blue-accent);
+  outline: none;
+  font-weight: bold;
+}
+
+#search {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: var(--dark-pink);
+  border: 2px solid var(--dark-pink);
+  color: wheat;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}

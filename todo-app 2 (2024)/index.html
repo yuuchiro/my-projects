@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <template>
+      <div class="questItem">
+        <div>
+          <ion-icon name="ellipse-outline" class="completeCbx"></ion-icon>
+          <p>some kind of todo</p>
+        </div>
+        <ion-icon name="close" class="deleteItem"></ion-icon>
+      </div>
+    </template>
+
+    <div class="img-sec"></div>
+
+    <div class="list">
+      <div class="title">
+        <h1>T O D O</h1>
+        <ion-icon name="sunny" id="changeColor"></ion-icon>
+      </div>
+      <input
+        type="text"
+        name=""
+        id="newTaskInput"
+        placeholder="Create a new todo..."
+      />
+      <div class="list-items">
+        <div class="items"></div>
+        <div class="filters-container">
+          <p id="items-left">0 items left</p>
+          <div class="filters">
+            <span class="selected-filter filter-option">All</span>
+            <span class="filter-option">Active</span>
+            <span class="filter-option">Completed</span>
+          </div>
+          <span id="clear-completed">Clear completed</span>
+        </div>
+      </div>
+
+      <div class="filters-responsive">
+        <span class="selected-filter filter-option">All</span>
+        <span class="filter-option">Active</span>
+        <span class="filter-option">Completed</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

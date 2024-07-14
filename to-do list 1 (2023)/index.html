@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="container">
+
+            <h1>To-do lista</h1>
+            <div id="addItem">
+                <input type="text" name="" id="addItemInput" placeholder="Dodaj element do listy">
+                <input type="button" value="+" id="addBtn">
+            </div>
+
+            <div id="list-btns">
+                <div id="listItems">
+                    <!--Zawartość listy-->
+                    <ul id="list">
+
+                    </ul>
+                </div>
+                <div id="filterBtns">
+                    <input type="button" value="Pokaż wszystkie" class="filter-list-btn cur-selected" id="showAll">
+                    <input type="button" value="Pokaż tylko zaznaczone" class="filter-list-btn hidden-btns" id="showSel">
+                    <input type="button" value="Pokaż tylko niezaznaczone" class="filter-list-btn hidden-btns" id="showUnsel">
+                </div>
+            </div>
+
+
+            <input type="button" value="Zaznacz/odznacz" class="botButtons" id="selectBtn">
+            <input type="button" value="Usuń" class="botButtons" id="deleteBtn">
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

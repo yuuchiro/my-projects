@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <template>
+      <main>
+        <div class="general-info">
+          <div class="image-container">
+            <img src="cat.jpg" alt="profile picture" />
+          </div>
+          <div>
+            <div class="username-date">
+              <h2 id="username">myUsername</h2>
+              <div class="join-date">
+                <span>Joining date:</span>
+                <p id="date">15.05.2024</p>
+              </div>
+            </div>
+            <div class="follows">
+              <div class="followers-div">
+                <span>Followers: </span>
+                <p id="followers">1</p>
+              </div>
+              <div class="following-div">
+                <span>Following: </span>
+                <p id="following">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <fieldset class="bio-container">
+          <legend>BIO</legend>
+          <p id="bio">Looks like it's empty...</p>
+        </fieldset>
+      </main>
+    </template>
+
+    <section class="search-section">
+      <input type="text" name="username" id="usernameInput" placeholder="Enter username" maxlength="45"/>
+      <button id="search">Find user</button>
+    </section>
+
+    <section class="profile-section hidden">
+      <button id="backBtn">Back</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

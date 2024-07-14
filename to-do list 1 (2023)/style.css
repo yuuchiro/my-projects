@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/bg.jpg");
+    overflow: hidden;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#listItems{
+    width: 25vw;
+    height: 65vh;
+    border: 1px solid rgbA(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    overflow: auto;
+    backdrop-filter: blur(10px);
+}
+
+#addItem{
+    margin: 20px;
+}
+
+#addBtn{
+    padding: 10px 16px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+#addBtn:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#addItemInput{
+    padding: 8px 20px;
+    font-size: 17px;
+    width: 40vw;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.botButtons{
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h1{
+    margin-top: 40px;
+    color: white;
+}
+
+li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+    list-style-type: circle;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.cur-sel-item {
+    color: aquamarine;
+    font-weight: 400;
+    list-style-type: disc;
+}
+
+.sel-item {
+    text-decoration: line-through;
+    list-style-type: disc;
+}
+
+#list-btns{
+    display: flex;
+    margin-left: 50px;
+}
+
+#filterBtns{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.filter-list-btn{
+    margin-left: 30px;
+    width: 260px;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    order: 2;
+}
+
+.cur-selected{
+    order: 1;
+}
+
+.hidden-btns{
+    display: none;
+}
+
+.temp-input{
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 200;
+    font-size: 1em;
+    width: 100%;
+}
