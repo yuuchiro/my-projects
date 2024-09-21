@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto 0 auto;
+  color: white;
+  background: linear-gradient(
+    220deg,
+    rgb(6, 40, 53) 0%,
+    rgba(8, 14, 48, 1) 25%,
+    rgba(99, 23, 66, 1) 100%
+  );
+}
+
+.top-content {
+  display: flex;
+}
+
+.side-panel {
+  max-width: 32%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.116);
+  color: black;
+}
+
+.side-content {
+  background-color: white;
+  padding: 30px;
+}
+
+.side-content > h2 {
+  font-size: 50px;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+.middle-panel {
+  padding: 50px 0 50px 50px;
+  width: 100%;
+}
+
+.contact > div {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact > div a,
+.contact > div p {
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.contact ion-icon {
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  color: black;
+}
+
+.middle-panel > h1 {
+  font-size: 20px;
+  letter-spacing: 15px;
+  font-weight: normal;
+}
+
+.title {
+  font-size: 13px;
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid rgb(32, 107, 136);
+  border-right: none;
+  margin: 40px 0 20px 0;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 15px;
+  padding: 15px;
+  opacity: 0.8;
+  line-height: 30px;
+}
+
+.bottom-content {
+  padding: 0 0 30px 50px;
+}
